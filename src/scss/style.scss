@@ -1,0 +1,16 @@
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &__box {
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .another {
+    margin: 0;
+    padding: 0;
+  }
+}
