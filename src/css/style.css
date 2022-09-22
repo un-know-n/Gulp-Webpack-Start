@@ -1,0 +1,20 @@
+@import 'components/header.css';
+
+.title {
+  font-size: 24px;
+  color: yellow;
+}
+
+.news {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+@media (max-width: 700px) {
+  .news {
+    color: #000;
+    display: grid;
+    grid-template-columns: auto;
+  }
+}

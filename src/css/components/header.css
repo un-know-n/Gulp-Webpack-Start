@@ -1,0 +1,16 @@
+.someStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: #000;
+}
+
+@media (max-width: 700px) {
+  body {
+    color: #000;
+    display: grid;
+    grid-template-columns: auto;
+  }
+}

@@ -1,0 +1,10 @@
+extends layout/app
+
+block page 
+  include components/header
+
+  h1.title Main page
+
+  ul.news 
+    each item in news 
+      li= item.name

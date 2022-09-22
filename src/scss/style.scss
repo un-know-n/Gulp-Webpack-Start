@@ -1,16 +1,27 @@
-.test {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  &__box {
-    font-size: 12px;
-    margin: 0 auto;
-    padding: 15px;
-  }
+$default-var: 10px;
 
-  .another {
-    margin: 0;
-    padding: 0;
+@mixin someName {
+  @media (max-width: 700px) {
+    @content;
   }
 }
+
+.title {
+  font-size: 24px;
+  color: yellow;
+}
+
+body {
+  @include someName {
+    color: #000;
+    background-color: purple;
+  }
+}
+
+.news {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+@import 'components/*.scss';
