@@ -1,4 +1,9 @@
 @import 'components/header.css';
+@import 'fonts.css';
+@import '~normalize.css';
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 .title {
   font-size: 24px;
